@@ -1,21 +1,23 @@
 html {
     margin: 0;
     padding: 0;
+    width: 50%;
+    margin: auto;
 }
 
 body {
     background-color: lightblue;
-    font-family: 'Segoe UI', Roboto, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     margin: 0;
     
 }
 
 #main {
     background-color: white;
-    width: 50%;
-    margin: auto;
     padding: 1em;
     border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
 }
 
 form, fieldset {
@@ -67,6 +69,10 @@ select, input[type="date"] {
     border: 2px solid green;
 }
 
+#bottom-hr {
+    border: 1px solid lightgray;
+}
+
 .err {
     color: darkred;
     visibility: hidden;
@@ -77,3 +83,4 @@ select, input[type="date"] {
 select {
     margin-bottom: 1em;
 }
+

@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
+    <header>
+        <h1>Workout Summary</h1>
+    </header>
     <div id="main">
-        <header>
-            <h1>Workout Summary</h1>
-        </header>
         <% if (!workouts || workouts.length === 0) { %>
             <p>There were no logged workouts.</p>
         <%} else { %>
@@ -22,13 +22,13 @@
                 <p><label>Duration:</label><%= workouts[i].duration %></p> 
                 <p><label>Intensity:</label><%= workouts[i].intensity %></p> 
                 <p><label>Date:</label><%= workouts[i].date %></p> 
-                <p><label>Notes:</label><%= workouts[i].notes %></p> 
+                <p><label>Notes:</label><%= workouts[i].notes %></p>
                 </div>
             <% } %>
         <% } %>
-        <footer>
-        <a href="/" class="link-button">Log Another Workout</a>
-        </footer>
     </div>
+    <footer>
+        <a href="/" class="link-button">Log Another Workout</a>
+    </footer>
 </body>
 </html>
