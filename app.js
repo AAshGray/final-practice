@@ -6,6 +6,7 @@ let workouts = [];
 app.use(express.static('public'));
 app.use(express.urlencoded({extended: true}));
 app.set('view engine', 'ejs');
+// Updated port from 3000 to 3001 because of a temporary network port issue (port in use)
 const PORT = 3001;
 
 app.get('/', (req, res) => {
