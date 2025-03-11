@@ -1,0 +1,79 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: lightblue;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    margin: 0;
+    
+}
+
+#main {
+    background-color: white;
+    width: 50%;
+    margin: auto;
+    padding: 1em;
+    border: none;
+}
+
+form, fieldset {
+    border: none;
+}
+
+button {
+    border: none;
+    background-color:green;
+    border-color: green;
+    padding: .5rem .75rem;
+    border-radius: .25rem;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    margin-top: 0.5em;;
+    width: 100%;
+}
+
+input[type="text"], select, textarea, input[type="date"]  {
+    display: block;
+    width: 100%;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+}
+
+select, input[type="date"] {
+    min-height: 1.5rem;
+}
+
+.link-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.link-button:hover {
+    background-color: #0056b3;
+}
+
+#main hr {
+    border: 2px solid green;
+}
+
+.err {
+    color: darkred;
+    visibility: hidden;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+select {
+    margin-bottom: 1em;
+}

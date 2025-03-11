@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Fitness Tracker</title>
+
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/client-validation.js" defer></script>
+</head>
+<body>
+    <div id="main">
+    <header>
+        <h1>Personal Fitness Tracker</h1>
+    </header>
+    <form action="logworkout" method="post" id="workout-form">
+        <fieldset>
+            <label>Workout Type:</label>
+                <select name="workoutType" id="workoutType">
+                    <option value="running">Running</option>
+                    <option value="weightlifting">Weightlifting</option>
+                    <option value="yoga">Yoga</option>
+                    <option value="cycling">Cycling</option>
+                    <option value="other">Other</option>
+                </select>
+
+            <label>Duration (minutes):</label>
+                <input type="text" name="duration" id="duration">
+                <div class="err" id="err-duration">Duration must be in minutes.</div>
+            <label>Intensity Level:</label>
+                <input type="radio" name="intensity" value="low">Low
+                <input type="radio" name="intensity" value="medium">Medium
+                <input type="radio" name="intensity" value="high">High<br>
+                <div class="err" id="err-intensity">Please select an intensity.</div>
+
+            <label>Date:</label>
+                <input type="date" name="date" id="date">
+                <div class="err" id="err-date">Date is required</div>
+
+            <label>Notes:</label>
+                <textarea name="notes" id="notes" placeholder="Additional coments..."></textarea>
+            <button type="submit">Log Workout</button>
+        </fieldset>
+    </form>
+    </div>
+</body>
+</html>

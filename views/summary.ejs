@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Summary</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div id="main">
+        <header>
+            <h1>Workout Summary</h1>
+        </header>
+        <% if (!workouts || workouts.length === 0) { %>
+            <p>There were no logged workouts.</p>
+        <%} else { %>
+            <% for (let i = workouts.length - 1; i >= 0; i--) { %>
+                <div class="workout-entry">
+                <h3>Logged Workout #<%=i+1%></h3>
+                <hr>
+                <p><label>Workout Type:</label><%= workouts[i].workoutType %></p> 
+                <p><label>Duration:</label><%= workouts[i].duration %></p> 
+                <p><label>Intensity:</label><%= workouts[i].intensity %></p> 
+                <p><label>Date:</label><%= workouts[i].date %></p> 
+                <p><label>Notes:</label><%= workouts[i].notes %></p> 
+                </div>
+            <% } %>
+        <% } %>
+        <footer>
+        <a href="/" class="link-button">Log Another Workout</a>
+        </footer>
+    </div>
+</body>
+</html>
